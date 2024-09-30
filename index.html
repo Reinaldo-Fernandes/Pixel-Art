@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome CDN para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Pixel Art</title>
+</head>
+<body>
+    <header>
+        <h1>Pixel Art <i class="fa-solid fa-wand-magic-sparkles"></i></h1>
+    </header>
+
+    <main>
+        <aside>
+            <span class="option-title">Tamanho: <i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+            <input type="number" class="input-size" min="4" value="10">
+        
+            <span class="option-title">Cor: <i class="fa-solid fa-palette"></i></span>
+            <input type="color" class="input-color">
+        
+            <span class="option-title">Cores usadas: <i class="fa-solid fa-fill-drip"></i></span>
+            <section class="used-colors"></section>
+        
+            <!-- Botões de limpar tudo e apagar um pixel -->
+            <button class="button-clear-all">Limpar Tudo <i class="fa-solid fa-broom"></i></button>
+            <button class="button-clear-pixel">
+                <i class="fas fa-eraser"></i> Apagar 
+            </button>
+        
+            <!-- Botão de baixar imagem -->
+            <button class="button-save">Baixar imagem <i class="fa-solid fa-download"></i></button>
+        </aside>
+
+        <section class="canvas"></section>
+        <div class="resize"></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
